@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Escritura | Leoncio Prado
+    </title>
+
+    <!-- FUENTES -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<audio id="bgMusic" autoplay loop>
+
+    <source
+    src="assets/audio/the haunted ocean 5 .mpeg"
+    type="audio/mpeg">
+
+</audio>
+
+<button id="musicToggle">
+
+    🎵
+
+</button>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Leoncio Prado
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="personajes.html">
+                Personajes
+            </a>
+
+            <a href="analisis.html">
+                Análisis
+            </a>
+
+            <a href="escritura.html" class="active">
+                Escritura
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- HEADER -->
+
+    <section class="page-header">
+
+        <p class="mini-text">
+            PRODUCCIÓN NARRATIVA
+        </p>
+
+        <h1>
+            SALA DE ESCRITURA
+        </h1>
+
+        <p class="header-description">
+
+            Reinterpreta la novela.
+            Cambia decisiones, modifica conflictos
+            o construye una nueva versión de la historia
+            manteniendo coherencia con los personajes.
+
+        </p>
+
+    </section>
+
+    <!-- WRITER -->
+
+    <section class="writer-container">
+
+        <div class="writer-card">
+
+            <h2>
+                Tu reinterpretación narrativa
+            </h2>
+
+<h3>
+    Tu interpretación previa
+</h3>
+
+<p id="loadedInterpretation">
+
+    Completa primero la sección de análisis.
+
+</p>
+
+<div class="writing-mission">
+
+    <h3>
+        Tu misión
+    </h3>
+
+    <p>
+
+        Utiliza la interpretación que construiste
+        en la sección de análisis para reescribir
+        un acontecimiento importante de la novela.
+
+        Mantén coherencia con los personajes,
+        los conflictos y el universo narrativo
+        de La ciudad y los perros.
+
+    </p>
+
+</div>
+
+            <p class="writer-description">
+
+                Puedes:
+                cambiar el desenlace,
+                alterar perspectivas,
+                crear escenas inéditas
+                o trasladar la historia
+                a otro contexto.
+
+            </p>
+
+            <textarea
+            id="storyEditor"
+            placeholder="Comienza a escribir tu reinterpretación..."></textarea>
+
+            <!-- STATS -->
+
+            <div class="editor-stats">
+
+                <div class="stat-box">
+
+                    <h3>
+                        Palabras
+                    </h3>
+
+                    <p id="wordCount">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>
+                        Caracteres
+                    </h3>
+
+                    <p id="charCount">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BUTTONS -->
+
+            <div class="editor-buttons">
+
+                <button id="downloadBtn">
+
+                    Descargar texto
+
+                </button>
+
+                <button id="clearBtn">
+
+                    Limpiar editor
+
+                </button>
+
+            </div>
+
+        </div>
+
+</div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Proyecto TIC — Escritura creativa y reinterpretación narrativa
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
